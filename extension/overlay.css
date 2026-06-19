@@ -1,0 +1,84 @@
+#finance-agent-overlay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 280px;
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  z-index: 999999;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+.fa-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #1e293b;
+}
+
+.fa-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 6px #4ade80;
+}
+
+.fa-body {
+  padding: 14px;
+}
+
+.fa-loading {
+  color: #64748b;
+  font-size: 13px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.fa-verdict {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.fa-line {
+  color: #94a3b8;
+  font-size: 12.5px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.fa-row {
+  display: flex;
+  justify-content: space-between;
+  color: #cbd5e1;
+  font-size: 12.5px;
+  padding: 4px 0;
+}
+
+.fa-row b {
+  color: #f8fafc;
+}
+
+.fa-gap {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #1e293b;
+  color: #fbbf24;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.fa-error {
+  color: #f87171;
+  font-size: 12px;
+}

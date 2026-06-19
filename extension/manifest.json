@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Finance Agent — Live Bet Analyzer",
+  "version": "1.0",
+  "description": "Real-time AI analysis overlay for prediction market bets",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://localhost:8000/*", "file:///*"],
+  "content_scripts": [
+    {
+      "matches": ["file:///*", "https://kalshi.com/*"],
+      "js": ["content.js"],
+      "css": ["overlay.css"]
+    }
+  ]
+}
