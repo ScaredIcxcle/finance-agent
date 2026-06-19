@@ -1,0 +1,29 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: finance-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+      - ./logs:/app/logs
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+      - DEMO_MODE=true
+      - PAPER_TRADING=true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: finance-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - backend

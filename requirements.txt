@@ -1,0 +1,9 @@
+langchain
+langchain-community
+ollama
+python-dotenv
+requests
+sentence-transformers
+torch
+fastapi
+uvicorn
