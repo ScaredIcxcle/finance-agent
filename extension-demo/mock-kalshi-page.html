@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalshi - Will the Lakers win the 2025 Championship?</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; background: #fff; padding: 3rem; max-width: 700px; margin: 0 auto; }
+    .market-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; }
+    .price-row { display: flex; gap: 2rem; margin: 1.5rem 0; }
+    .price-box { padding: 1rem 1.5rem; border: 1px solid #ddd; border-radius: 8px; }
+    .yes { color: #16a34a; font-weight: 700; font-size: 1.4rem; }
+    .no { color: #dc2626; font-weight: 700; font-size: 1.4rem; }
+  </style>
+</head>
+<body>
+  <!-- This mimics Kalshi's real DOM structure closely enough for the extension to find it -->
+  <h1 class="market-title" data-kalshi-market-title>Will the Lakers win the 2025 NBA Championship?</h1>
+  <div class="price-row">
+    <div class="price-box">
+      <div>Yes</div>
+      <div class="yes" data-kalshi-yes-price>18¢</div>
+    </div>
+    <div class="price-box">
+      <div>No</div>
+      <div class="no" data-kalshi-no-price>82¢</div>
+    </div>
+  </div>
+  <p>Volume: $89,000 | Open Interest: $340,000</p>
+</body>
+</html>
