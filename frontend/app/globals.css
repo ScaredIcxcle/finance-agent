@@ -1,0 +1,220 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0a0a0f;
+  color: #e2e8f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.demo-badge {
+  background: #1e293b;
+  color: #94a3b8;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Health Score Card */
+.health-card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.health-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.score-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 3px solid;
+}
+
+.score-circle .number {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.score-circle .label {
+  font-size: 0.65rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.score-good  { border-color: #22c55e; color: #22c55e; }
+.score-ok    { border-color: #f59e0b; color: #f59e0b; }
+.score-bad   { border-color: #ef4444; color: #ef4444; }
+
+.one-liner {
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.subscores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.subscore {
+  background: #0f172a;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+.subscore-label {
+  font-size: 0.7rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.subscore-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.deductions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.deduction {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 0.85rem;
+  background: #0f172a;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: #94a3b8;
+}
+
+.deduction-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tag-degeneracy    { background: #450a0a; color: #f87171; }
+.tag-overpricing   { background: #431407; color: #fb923c; }
+.tag-volatility    { background: #1c1917; color: #a8a29e; }
+.tag-concentration { background: #0c1a2e; color: #60a5fa; }
+.tag-correlation   { background: #1a0533; color: #c084fc; }
+.tag-time_decay    { background: #0d2618; color: #4ade80; }
+
+/* Section titles */
+.section-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.85rem;
+}
+
+/* Portfolio table */
+.portfolio-card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+thead th {
+  text-align: left;
+  color: #475569;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0 0.75rem 0.75rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+tbody td {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid #0f172a;
+  color: #cbd5e1;
+  vertical-align: middle;
+}
+
+tbody tr:last-child td { border-bottom: none; }
+
+.market-badge {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.market-kalshi     { background: #0c1a2e; color: #60a5fa; }
+.market-polymarket { background: #0d2618; color: #4ade80; }
+.market-draftkings { background: #1a0533; color: #c084fc; }
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.error {
+  background: #450a0a;
+  color: #f87171;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
