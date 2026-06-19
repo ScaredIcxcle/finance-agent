@@ -1,6 +1,18 @@
 # finance-agent
 the agent for all your finance (prediction markets only for now)
 
+DIRECTIONS
+
+the screenshots are in the screenshots folder. regarding the score and the sentiment discrepancy in the apple kalshi vs polymarket screenshot, the sentiment only works for the yes option whereas the score works for the held position, which in our case is no so kalshi gets a higher score. this will be fixed in the future.
+
+the llm used is ollama mistral 7b so you need to download it and that is why it takes such a long time to load. it may take you more than 2 mins to load.
+
+i dont know why every bet has 2025 in the title thats a claude thing but of course it will not matter in the real api version.
+
+to run the extension enable developer mode, load unpacked, and select the extension folder. open the mock extension html on a new tab and the extension will work there.
+
+OVERVIEW
+
 only demo mode works for now. in this mode there are no live links to kalshi and the others, no real time graphs, and not even real bets. all of this is based on simulations. the reason for this is kalshi, polymarket and draft kings are banned in india, and i kept getting nsfw balkan ads when using my free vpn extension. 
 
 all of the values of the market positions, holdings, depth are in the mock_data.py and mock_history. you can change the values in there and see how the ai ratings change. they dont change much, thats probably because the pricing multiplier is probably set lower than it should be, but iwanted to have all the working features working for the demo.
